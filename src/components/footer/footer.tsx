@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <footer className="p-3 bg-cyber-black flex items-center justify-center gap-3 w-full z-10 border-t-1 border-gray-800">
-      <small>&copy; {year} Andy Ashley</small> *
+      <small>&copy; {year} Andy Ashley</small> //
       <div className="flex gap-1">
         <a
           href="https://github.com/AndyAshley"

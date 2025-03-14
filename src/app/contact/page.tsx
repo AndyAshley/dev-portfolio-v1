@@ -22,7 +22,7 @@ export default function Contact() {
         <div>
           <p className="leading-relaxed mb-5">
             If you would like to get in touch with me, please feel free to use
-            the form below. I will get back to you as soon as possible.
+            this form. I will do my best to respond as soon as possible.
           </p>
           <p className="leading-relaxed">
             If this is for freelance work, please include as much detail as
