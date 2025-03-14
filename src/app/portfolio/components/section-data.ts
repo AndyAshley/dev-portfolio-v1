@@ -24,7 +24,7 @@ export const projectData: Project[] = [
     image: PortfolioSite,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveUrl: "/",
-    githubUrl: "https://github.com/AndyAshley/dev-portfolio",
+    githubUrl: "https://github.com/AndyAshley/dev-portfolio-v1",
     category: "Web Apps",
     },
 ];
