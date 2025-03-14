@@ -124,6 +124,8 @@ export default async function BlogPostPage({
     );
   }
 
+  console.log(metadata, content);
+
   return (
     <article className="max-w-7xl w-full mx-auto">
       <ContentContainer>
@@ -173,13 +175,19 @@ export default async function BlogPostPage({
  * Markdown Component Overrides
  */
 const markdownComponents: Components = {
-  img: ({ src = "", alt = "Markdown Image", width, height, ...props }) => (
+  img: ({
+    src = "",
+    alt = "Markdown Image",
+    width = 1024,
+    height = 576,
+    ...props
+  }) => (
     <div className="my-6">
       <Image
         src={src}
         alt={alt}
-        width={1024}
-        height={576}
+        width={Number(width)}
+        height={Number(height)}
         className="w-full rounded-lg border border-gray-700 shadow-md"
         {...props}
       />
