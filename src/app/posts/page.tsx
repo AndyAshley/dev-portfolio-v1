@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Thoughts on code, engineering, and the occasional deep dive into whatever tech rabbit hole I'm currently obsessed with.",
 };
 
-// Main Component
+// Main Page Component
 export default async function PostsPage() {
   const posts = await fetchPosts();
 
