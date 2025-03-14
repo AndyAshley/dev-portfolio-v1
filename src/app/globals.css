@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --font-primary: "NORD", sans-serif;
+  --font-secondary: "Space Grotesk", sans-serif;
+
+  --color-shadow-green-100: hsl(198, 19%, 56%);
+  --color-shadow-green-200: hsl(198, 19%, 50%);
+  --color-shadow-green-300: hsl(198, 19%, 44%);
+  --color-shadow-green-400: hsl(198, 19%, 38%);
+  --color-shadow-green-500: hsl(198, 19%, 32%);
+  --color-shadow-green-600: hsl(198, 19%, 26%);
+  --color-shadow-green-700: hsl(198, 19%, 20%);
+  --color-shadow-green-800: hsl(198, 19%, 14%);
+
+  --color-mint-green-100: hsl(140, 34%, 94%);
+  --color-mint-green-200: hsl(140, 34%, 88%);
+  --color-mint-green-300: hsl(140, 34%, 82%);
+  --color-mint-green-400: hsl(140, 34%, 76%);
+  --color-mint-green-500: hsl(140, 34%, 70%);
+  --color-mint-green-600: hsl(140, 34%, 79%);
+  --color-mint-green-700: hsl(140, 34%, 76%);
+  --color-mint-green-800: hsl(140, 34%, 73%);
+
+  --color-cyber-green-100: hsl(66, 80%, 71%);
+  --color-cyber-green-200: hsl(66, 80%, 66%);
+  --color-cyber-green-300: hsl(66, 80%, 61%);
+  --color-cyber-green-400: hsl(66, 80%, 56%);
+  --color-cyber-green-500: hsl(66, 80%, 51%);
+  --color-cyber-green-600: hsl(66, 80%, 46%);
+  --color-cyber-green-700: hsl(66, 80%, 41%);
+  --color-cyber-green-800: hsl(66, 80%, 36%);
+
+  --color-steel-grey-100: hsl(216, 12%, 78%);
+  --color-steel-grey-200: hsl(216, 12%, 68%);
+  --color-steel-grey-300: hsl(216, 12%, 58%);
+  --color-steel-grey-400: hsl(216, 12%, 48%);
+  --color-steel-grey-500: hsl(216, 12%, 38%);
+  --color-steel-grey-600: hsl(216, 12%, 28%);
+  --color-steel-grey-700: hsl(216, 12%, 18%);
+  --color-steel-grey-800: hsl(216, 12%, 8%);
+
+  --color-cyber-black: hsl(0, 0%, 7%);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #222222;
+  --primary-color: hsl(140, 34%, 73%);
+  --secondary-color: hsl(198, 19%, 32%);
+  --primary-font-color: var(--background);
+  --secondary-font-color: hsl(200, 18%, 10%);
+}
+
+@layer base {
+  body {
+    @apply text-[#D1D5DB] bg-gradient-to-bl from-cyber-black from-0% to-steel-grey-800 to-50% -z-10 h-full font-secondary;
+  }
+
+  h1 {
+    @apply text-4xl font-bold tracking-tighter font-primary;
+  }
+
+  h2 {
+    @apply text-3xl font-bold tracking-tighter font-primary;
+  }
+
+  h3 {
+    @apply text-2xl font-bold font-primary;
+  }
+
+  h4 {
+    @apply text-xl font-bold;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  ul {
+    @apply list-disc;
+    @apply ml-4;
+  }
+
+  li {
+    @apply ml-2;
+  }
+
+  .underline-animation {
+    @apply relative;
+  }
+
+  .underline-animation::after {
+    @apply content-[''] absolute left-1/2 bottom-0 w-0 h-[2px] bg-cyber-green-300 transition-all duration-300 ease-in-out;
+  }
+
+  .underline-animation:hover::after {
+    @apply w-full left-0;
+  }
+
+  .shadow-cyber-green {
+    @apply shadow-cyber-green-500;
+  }
+}
