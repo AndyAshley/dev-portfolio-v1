@@ -75,8 +75,11 @@
 }
 
 @layer base {
+  html {
+    @apply text-[#D1D5DB] bg-gradient-to-bl from-cyber-black from-0% to-steel-grey-800 to-50%;
+  }
   body {
-    @apply text-[#D1D5DB] bg-gradient-to-bl from-cyber-black from-0% to-steel-grey-800 to-50% -z-10 h-full font-secondary;
+    @apply font-secondary;
   }
 
   h1 {
