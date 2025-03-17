@@ -131,6 +131,15 @@
     font-family: "NORD", sans-serif;
     font-weight: 400;
     font-style: normal;
-    src: url("/fonts/Nord-Bold.woff2") format("woff2");
+    src: url("/fonts/NORD-Regular.woff2") format("woff2"),
+      url("/fonts/NORD-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "NORD", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url("/fonts/NORD-Medium.woff2") format("woff2"),
+      url("/fonts/NORD-Medium.woff") format("woff");
   }
 }

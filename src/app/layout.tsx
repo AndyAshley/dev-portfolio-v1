@@ -20,22 +20,6 @@ export const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-export const nordFont = localFont({
-  src: [
-    {
-      path: "../../public/fonts/NORD-Medium.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NORD-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-  ],
-  display: "swap",
-});
-
 // Metadata initialization
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.andyashley.dev"),
