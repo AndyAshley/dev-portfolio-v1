@@ -23,9 +23,6 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --font-primary: "NORD", sans-serif;
-  --font-secondary: "Space Grotesk", sans-serif;
-
   --color-shadow-green-100: hsl(198, 19%, 56%);
   --color-shadow-green-200: hsl(198, 19%, 50%);
   --color-shadow-green-300: hsl(198, 19%, 44%);
@@ -79,19 +76,22 @@
     @apply text-[#D1D5DB] bg-gradient-to-bl from-cyber-black from-0% to-steel-grey-800 to-50%;
   }
   body {
-    @apply font-secondary;
+    font-family: var(--font-space-grotesk);
   }
 
   h1 {
-    @apply text-4xl font-bold tracking-tighter font-primary;
+    @apply text-4xl font-bold tracking-tighter;
+    font-family: var(--font-nord);
   }
 
   h2 {
-    @apply text-3xl font-bold tracking-tighter font-primary;
+    @apply text-3xl font-bold tracking-tighter;
+    font-family: var(--font-nord);
   }
 
   h3 {
-    @apply text-2xl font-bold font-primary;
+    @apply text-2xl font-bold;
+    font-family: var(--font-nord);
   }
 
   h4 {
@@ -126,20 +126,14 @@
   .shadow-cyber-green {
     @apply shadow-cyber-green-500;
   }
+}
 
-  @font-face {
-    font-family: "NORD", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    src: url("/fonts/NORD-Regular.woff2") format("woff2"),
-      url("/fonts/NORD-Regular.woff") format("woff");
+@layer utilities {
+  .font-primary {
+    font-family: var(--font-nord);
   }
 
-  @font-face {
-    font-family: "NORD", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    src: url("/fonts/NORD-Medium.woff2") format("woff2"),
-      url("/fonts/NORD-Medium.woff") format("woff");
+  .font-secondary {
+    font-family: var(--font-space-grotesk);
   }
 }

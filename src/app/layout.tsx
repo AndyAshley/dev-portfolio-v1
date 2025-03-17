@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 // Components
@@ -12,11 +13,21 @@ import { ToastProvider } from "@/context/toast-context";
 import ToastContainer from "@/components/ui/toast-container";
 
 // Fonts
-export const spaceGrotesk = Space_Grotesk({
+const spaceGroteskFont = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-space-grotesk",
   display: "swap",
+  preload: true,
+});
+
+const nordFont = localFont({
+  src: "./../../public/fonts/NORD-Regular.woff2",
+  weight: "400",
+  style: "normal",
+  variable: "--font-nord",
+  display: "swap",
+  preload: true,
 });
 
 // Metadata initialization
@@ -45,7 +56,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ToastProvider>
-        <body className="grid grid-rows-[auto_1fr_auto] min-h-screen w-full body-background">
+        <body
+          className={`${spaceGroteskFont.variable} ${nordFont.variable} grid grid-rows-[auto_1fr_auto] min-h-screen w-full body-background`}
+        >
           <Header />
           <main className="w-full h-full mx-auto px-4 py-20 my-auto">
             {children}
