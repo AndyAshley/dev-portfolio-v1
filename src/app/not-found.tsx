@@ -1,9 +1,9 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 // Components
-import { Link } from "lucide-react";
+import { Link as LinkIcon } from "lucide-react";
 import ContentContainer from "@ui/content-container";
 
 const messages = [
@@ -44,6 +44,7 @@ export default function NotFound() {
 
   // Avoid hydration mismatches by showing nothing until the random message is set
   if (!message) return null;
+
   return (
     <section className="flex items-center justify-center h-full w-full">
       <ContentContainer>
@@ -54,9 +55,10 @@ export default function NotFound() {
               {line}
             </span>
           ))}
-          <Link href="/" className="mt-4 text-cyber-green-200 underline">
-            Return to safety
-          </Link>
+          <div className="flex items-center mt-4 text-cyber-green-200 underline underline-offset-2">
+            <LinkIcon className="w-4 h-4 mr-2" />
+            <Link href="/">Return to safety</Link>
+          </div>
         </div>
       </ContentContainer>
     </section>
