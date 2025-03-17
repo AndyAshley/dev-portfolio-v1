@@ -124,8 +124,6 @@ export default async function BlogPostPage({
     );
   }
 
-  console.log(metadata, content);
-
   return (
     <article className="max-w-7xl w-full mx-auto">
       <ContentContainer>

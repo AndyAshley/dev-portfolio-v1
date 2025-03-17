@@ -29,12 +29,10 @@ function ProjectCard({ project, index }: ProjectCardProps) {
           />
         </div>
         <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-bold mb-2 tracking-wider">
+          <h2 className="font-secondary text-xl font-bold mb-2 tracking-normal">
             {project.title}
-          </h3>
-          <p className="mb-4 flex-grow">
-            {project.description}
-          </p>
+          </h2>
+          <p className="mb-4 flex-grow">{project.description}</p>
 
           <div className="flex flex-wrap gap-2 mb-4">
             {project.technologies.map((tech, techIndex) => (

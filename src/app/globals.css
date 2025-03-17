@@ -23,9 +23,6 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --font-primary: "NORD", sans-serif;
-  --font-secondary: "Space Grotesk", sans-serif;
-
   --color-shadow-green-100: hsl(198, 19%, 56%);
   --color-shadow-green-200: hsl(198, 19%, 50%);
   --color-shadow-green-300: hsl(198, 19%, 44%);
@@ -79,23 +76,31 @@
     @apply text-[#D1D5DB] bg-gradient-to-bl from-cyber-black from-0% to-steel-grey-800 to-50%;
   }
   body {
-    @apply font-secondary;
+    @apply tracking-tighter;
+    font-family: var(--font-space-grotesk);
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold;
+    font-family: var(--font-nord);
   }
 
   h1 {
-    @apply text-4xl font-bold tracking-tighter font-primary;
+    @apply text-4xl tracking-tighter;
   }
 
   h2 {
-    @apply text-3xl font-bold tracking-tighter font-primary;
+    @apply text-3xl tracking-tighter;
   }
 
   h3 {
-    @apply text-2xl font-bold font-primary;
+    @apply text-2xl tracking-tighter;
   }
 
   h4 {
-    @apply text-xl font-bold;
+    @apply text-xl;
   }
 
   p {
@@ -125,5 +130,15 @@
 
   .shadow-cyber-green {
     @apply shadow-cyber-green-500;
+  }
+}
+
+@layer utilities {
+  .font-primary {
+    font-family: var(--font-nord);
+  }
+
+  .font-secondary {
+    font-family: var(--font-space-grotesk);
   }
 }
