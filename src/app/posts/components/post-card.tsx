@@ -29,9 +29,11 @@ const PostCard = ({ post }: PostCardType) => {
       )}
       <div className="p-4 space-y-4">
         <div>
-          <h2 className="font-bold text-xl">{post.title}</h2>
+          <h2 className="font-secondary font-bold text-xl tracking-normal">
+            {post.title}
+          </h2>
           <small className="text-cyber-green-100">{post.category}</small>
-          <p className="mt-3">{post.preview}</p>
+          <p className="mt-2">{post.preview}</p>
         </div>
         <LinkButton href={`/posts/${post.slug}`}>Read More</LinkButton>
       </div>

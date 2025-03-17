@@ -80,23 +80,27 @@
     font-family: var(--font-space-grotesk);
   }
 
-  h1 {
-    @apply text-4xl font-bold tracking-tighter;
+  h1,
+  h2,
+  h3 {
+    @apply font-bold;
     font-family: var(--font-nord);
+  }
+
+  h1 {
+    @apply text-4xl tracking-tighter;
   }
 
   h2 {
-    @apply text-3xl font-bold tracking-tighter;
-    font-family: var(--font-nord);
+    @apply text-3xl tracking-tighter;
   }
 
   h3 {
-    @apply text-2xl font-bold;
-    font-family: var(--font-nord);
+    @apply text-2xl tracking-tighter;
   }
 
   h4 {
-    @apply text-xl font-bold;
+    @apply text-xl;
   }
 
   p {

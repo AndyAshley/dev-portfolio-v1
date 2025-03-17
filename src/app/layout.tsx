@@ -62,10 +62,10 @@ export default function RootLayout({
           <Header />
           <main className="w-full h-full mx-auto px-4 py-20 my-auto">
             {children}
+            <ParticleBackground />
+            <ToastContainer />
           </main>
           <Footer />
-          <ParticleBackground />
-          <ToastContainer />
         </body>
       </ToastProvider>
     </html>
