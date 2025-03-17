@@ -14,6 +14,7 @@ It showcases my **projects, skills, and journey as a software engineer**, with a
 - **Hosting:** Vercel
 - **Other:** TypeScript
 
+
 ## Contact
 
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/andy-ashley-b70539204/)
