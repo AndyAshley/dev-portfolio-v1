@@ -1,6 +1,3 @@
-// Icons
-import { Github, Linkedin } from "lucide-react";
-
 /**
  * Footer Component
  * Displays copyright information and social links.
