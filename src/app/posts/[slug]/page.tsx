@@ -131,12 +131,17 @@ export default async function BlogPostPage({
         <header className="mb-10">
           <h1 className="text-4xl font-bold mb-3">{metadata.title}</h1>
           <div className="flex flex-wrap items-center gap-3 text-sm mb-3">
-            <Chip text={metadata.category} color="text-gray-200" />
+            <Chip
+              background="bg-transparent"
+              color="text-ember-400"
+              className="border-2 border-zinc-700/80"
+              text={metadata.category}
+            />
             <time dateTime={metadata.date} className="font-medium">
               {parseDateTime(metadata.date)}
             </time>
-            <span className="text-gray-500">•</span>
-            <span className="font-semibold text-cyber-green-400">
+            <span className="text-zinc-500">•</span>
+            <span className="font-semibold text-ember-500">
               {metadata.author}
             </span>
           </div>

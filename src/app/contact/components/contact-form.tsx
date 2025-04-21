@@ -34,6 +34,7 @@ export const ContactForm = () => {
 
   // Refs object for easy iteration
   const refs = {
+    honeyRef,
     fNameRef,
     lNameRef,
     emailRef,
@@ -110,28 +111,28 @@ export const ContactForm = () => {
 
   return (
     <form
-      className="relative w-full flex flex-col rounded shadow-lg border border-gray-700 bg-steel-grey-800/75 px-4 pb-4 space-y-4"
+      className="relative w-full flex flex-col rounded shadow-lg border border-zinc-700/80 bg-steel-grey-800/75 px-4 pb-4 space-y-4"
       onSubmit={submitHandler}
     >
-      <div className="md:w-1/2 w-3/4 rounded-b-2xl bg-gray-700 h-2 mx-auto mb-10"></div>
-      <TextInput label="Full Name" name="full_name" honeypot ref={honeyRef} />
+      <div className="md:w-1/2 w-3/4 rounded-b-2xl bg-ember-800 h-2 mx-auto mb-10"></div>
+      <TextInput label="Full Name" name="input_1" honeypot ref={honeyRef} />
       <div className="flex flex-col md:flex-row gap-4 w-full">
-        <TextInput label="First Name" name="fName" required ref={fNameRef} />
-        <TextInput label="Last Name" name="lName" required ref={lNameRef} />
+        <TextInput label="First Name" name="input_2" required ref={fNameRef} />
+        <TextInput label="Last Name" name="input_3" required ref={lNameRef} />
       </div>
       <TextInput
         label="Email"
-        name="email"
+        name="input_4"
         type="email"
         required
         ref={emailRef}
       />
       <div className="flex flex-col md:flex-row gap-4 w-full">
-        <TextInput label="Company" name="company" ref={companyRef} />
-        <TextInput label="Phone" name="phone" type="tel" ref={phoneRef} />
+        <TextInput label="Company" name="input_5" ref={companyRef} />
+        <TextInput label="Phone" name="input_6" type="tel" ref={phoneRef} />
       </div>
 
-      <TextArea label="Message" name="message" ref={messageRef} />
+      <TextArea label="Message" name="input_7" ref={messageRef} />
       <Button
         align="end"
         type="submit"

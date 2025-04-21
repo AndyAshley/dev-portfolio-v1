@@ -12,7 +12,7 @@ export async function POST(request) {
     // Parse request body
     const data = await request.json();
 
-    if (data.full_name && data.full_name.trim() !== "") {
+    if (data.honey && data.honey.trim() !== "") {
       return NextResponse.json(
         { error: "Bot spam detected." },
         { status: 400 }

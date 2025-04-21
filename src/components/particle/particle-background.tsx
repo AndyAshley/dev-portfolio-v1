@@ -10,10 +10,10 @@ const PARTICLE_CONFIG = {
   ATTRACTION_RADIUS: 400, // Distance from mouse where attraction applies
   MOUSE_STOP_TIME: 1500, // Time after which particles stop following mouse
   CONNECT_RADIUS: 200, // Distance threshold for drawing lines between particles
-  GLOW_RADIUS: 100, // Distance from mouse where glow effect is maximum
-  GLOW_INTENSITY: 10, // Base glow intensity (higher = stronger glow)
-  PARTICLE_COLOR: "255,255,255", // Default white particles
-  LINE_COLOR: "255,255,255", // Default white lines
+  GLOW_RADIUS: 25, // Distance from mouse where glow effect is maximum
+  GLOW_INTENSITY: 2, // Base glow intensity (higher = stronger glow)
+  PARTICLE_COLOR: "90,90,90", // Default white particles
+  LINE_COLOR: "90,90,90", // Default white lines
   GLOW_COLOR: "255,255,255", // Default white glow
   PROXIMITY_GLOW_BOOST: 3, // Additional glow when near the mouse
   ENERGY_PULSE_SPEED: 0.002, // Speed of the glow pulsing effect

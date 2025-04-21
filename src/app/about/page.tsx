@@ -17,10 +17,10 @@ export default function About() {
     <section className="flex flex-col gap-15 w-full h-full items-center justify-center">
       <FadeInContent from="left">
         <div className="max-w-200 flex flex-col md:flex-row mx-auto items-center text-center">
-          <h1 className="md:text-right font-bold mb-3 border-cyber-green-800">
+          <h1 className="md:text-right font-bold mb-3">
             About Me
           </h1>
-          <p className="text-lg col-span-2 md:text-left md:border-l-2 border-cyber-green-800 md:pl-5 md:ml-5 md:text-wrap text-balance">
+          <p className="text-lg col-span-2 md:text-left md:border-l-2 border-ember-500 md:pl-5 md:ml-5 md:text-wrap text-balance tracking-normal text-zinc-200">
             <strong>I'm a lifelong coder</strong> with over 5 years of
             professional experience building modern web applications. I
             specialize in full-stack engineering with a focus on creating
@@ -32,8 +32,8 @@ export default function About() {
         <ContentContainer className="md:max-w-4xl w-full">
           <h2 className="font-bold mb-4 text-center">My Journey</h2>
           <Divider />
-          <div className="space-y-4 text-xl text-left">
-            <p className="text-md">
+          <div className="space-y-4 text-left text-zinc-300">
+            <p className="text-md text-zinc-300 tracking-normal">
               <strong>Curiosity has always driven me</strong>. Knowing that
               something works has never been enough, I need to understand
               <em> why</em> it works... <em>how</em> it works. That mindset
@@ -44,7 +44,7 @@ export default function About() {
               things ever since.
             </p>
 
-            <p className="text-md">
+            <p className="text-md text-zinc-300 tracking-normal">
               I started out with video game mods (heyyy StarCraft!), then moved
               on to web development, building my first website at 11. I've been
               hooked ever since. I've spent years learning, experimenting, and
@@ -53,7 +53,7 @@ export default function About() {
               myself to learn more, do more, and create more.
             </p>
 
-            <p className="text-md">
+            <p className="text-md text-zinc-300 tracking-normal">
               For me, coding isn't just about writing functions or shipping
               features. It's about engineering solutions, building systems, and
               transforming ideas into reality. Whether I'm solving a problem,
@@ -61,7 +61,7 @@ export default function About() {
               driven by the need to push boundaries and refine my craft.
             </p>
 
-            <p className="text-md">
+            <p className="text-md text-zinc-300 tracking-normal">
               I've worked professionaly across web and desktop development, not
               just adapting to different technologies but learning how to make
               them work for me. I don't build things because I have to; I build

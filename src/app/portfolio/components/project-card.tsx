@@ -4,6 +4,7 @@ import Image from "next/image";
 import FadeInContent from "@/lib/motion";
 import { LinkButton } from "@/components/ui/link-button";
 import ContentContainer from "@/components/ui/content-container";
+import Chip from "@/components/ui/chip";
 
 // Icons
 import { ExternalLink, Github } from "lucide-react";
@@ -19,7 +20,7 @@ type ProjectCardProps = {
 function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <FadeInContent delay={index * 0.1} from="bottom" className="group">
-      <ContentContainer className="group">
+      <ContentContainer className="group" noPadding>
         <div className="relative aspect-video overflow-hidden">
           <Image
             src={project.image}
@@ -36,12 +37,13 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 
           <div className="flex flex-wrap gap-2 mb-4">
             {project.technologies.map((tech, techIndex) => (
-              <span
+              <Chip
                 key={techIndex}
-                className="px-2 py-1 text-xs font-medium rounded-full bg-gray-700"
-              >
-                {tech}
-              </span>
+                background="bg-transparent"
+                color="text-ember-400"
+                className="border-2 border-zinc-700/80"
+                text={tech}
+              />
             ))}
           </div>
 

@@ -34,11 +34,11 @@ const HeroSection = () => {
         from="left"
         className="relative flex justify-center md:justify-start"
       >
-        <div className="relative w-[50vw] max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] aspect-square rounded-full overflow-hidden ring-2 ring-gray-700 border-2 border-black shadow-lg">
+        <div className="relative w-[50vw] max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] aspect-square rounded-full overflow-hidden ring-2 ring-ember-800 border-2 border-zinc-800 shadow-lg">
           <Image
             src={AndyHeadshot}
             alt="Andy Ashley"
-            className="w-full h-full object-cover grayscale"
+            className="w-full h-full object-cover grayscale-25"
             height={600}
             width={600}
             priority
@@ -51,7 +51,7 @@ const HeroSection = () => {
         className="flex flex-col space-y-6 text-center md:text-left justify-center"
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-0">
-          Andy A<span className="text-cyber-green-400 ml-1">.</span>
+          Andy A<span className="text-ember-500 ml-1">.</span>
         </h1>
 
         <h2 className="text-xl sm:text-2xl md:text-4xl font-medium font-secondary h-8">
