@@ -5,7 +5,7 @@
 
 const Divider = () => {
   return (
-    <div className="w-20 h-0.5 dark:bg-cyber-green-400 mx-auto my-4"></div>
+    <div className="w-20 h-0.5 dark:bg-ember-500 mx-auto my-4"></div>
   );
 };
 

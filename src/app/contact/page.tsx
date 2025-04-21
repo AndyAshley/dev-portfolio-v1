@@ -31,7 +31,7 @@ export default function Contact() {
           </p>
         </div>
         <div>
-          <div className="w-2/3 mx-auto md:mx-0 bg-cyber-green-800 h-0.5 my-5"></div>
+          <div className="w-2/3 mx-auto md:mx-0 bg-zinc-700/80 h-0.5 my-5"></div>
           <div className="flex items-center justify-center md:justify-start space-x-4">
             <h2>Socials //</h2>
             <LinkButton

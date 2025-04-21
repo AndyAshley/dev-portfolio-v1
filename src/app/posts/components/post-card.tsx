@@ -32,10 +32,12 @@ const PostCard = ({ post }: PostCardType) => {
           <h2 className="font-secondary font-bold text-xl tracking-normal">
             {post.title}
           </h2>
-          <small className="text-cyber-green-100">{post.category}</small>
+          <small className="text-ember-500">{post.category}</small>
           <p className="mt-2">{post.preview}</p>
         </div>
-        <LinkButton href={`/posts/${post.slug}`}>Read More</LinkButton>
+        <LinkButton href={`/posts/${post.slug}`} mode="secondary">
+          Read More
+        </LinkButton>
       </div>
     </ContentContainer>
   );

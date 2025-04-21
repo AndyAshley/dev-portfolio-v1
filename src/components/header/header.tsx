@@ -29,7 +29,7 @@ export function Header() {
   useEffect(() => {
     if (navOpen && window.innerWidth < 768) {
       // Change header background color when mobile menu is open
-      setHeaderBg("bg-cyber-black");
+      setHeaderBg("bg-cyber-black/80 backdrop-blur");
       document.body.style.overflow = "hidden";
     } else {
       setHeaderBg("bg-transparent");
@@ -45,6 +45,7 @@ export function Header() {
     "/",
     "/about",
     "/experience",
+    "/services",
     "/posts",
     "/portfolio",
     "/contact",
@@ -111,7 +112,7 @@ export function Header() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed inset-0 top-21 bg-gradient-to-b from-cyber-black from-0%  to-steel-grey-800 to-50% z-40 transform transition-transform duration-400 ease-in-out md:hidden ${
+        className={`fixed inset-0 top-21.5 bg-gradient-to-b from-cyber-black/80 from-0%  to-steel-grey-800 to-50% z-40 transform transition-transform duration-400 ease-in-out md:hidden backdrop-blur ${
           navOpen ? "translate-y-0" : "translate-y-full"
         }`}
       >
@@ -124,7 +125,7 @@ export function Header() {
                     href={pathItem}
                     className={`pb-1 px-4 py-2 block ${
                       pathItem === path
-                        ? "font-bold underline decoration-cyber-green-600 underline-offset-6"
+                        ? "font-bold underline decoration-ember-500 underline-offset-6"
                         : ""
                     }`}
                     onClick={toggleNav}

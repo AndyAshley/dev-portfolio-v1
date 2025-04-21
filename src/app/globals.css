@@ -59,13 +59,22 @@
   --color-steel-grey-700: hsl(216, 12%, 18%);
   --color-steel-grey-800: hsl(216, 12%, 8%);
 
+  --color-ember-100: hsl(4, 89%, 95%);
+  --color-ember-200: hsl(4, 89%, 85%);
+  --color-ember-300: hsl(4, 89%, 75%);
+  --color-ember-400: hsl(4, 89%, 65%);
+  --color-ember-500: hsl(4, 89%, 59%); /* Original HEX: #f54236 */
+  --color-ember-600: hsl(4, 89%, 48%);
+  --color-ember-700: hsl(4, 89%, 38%);
+  --color-ember-800: hsl(4, 89%, 28%);
+
   --color-cyber-black: hsl(0, 0%, 7%);
 }
 
 :root {
   --background: #ffffff;
   --foreground: #222222;
-  --primary-color: hsl(140, 34%, 73%);
+  --primary-color: #a3d2b2;
   --secondary-color: hsl(198, 19%, 32%);
   --primary-font-color: var(--background);
   --secondary-font-color: hsl(200, 18%, 10%);
@@ -73,10 +82,12 @@
 
 @layer base {
   html {
-    @apply text-[#D1D5DB] bg-gradient-to-bl from-cyber-black from-0% to-steel-grey-800 to-50%;
+    /* @apply text-[#f3f6ff] bg-gradient-to-bl from-cyber-black from-0% to-steel-grey-800 to-50%; */
+    /* @apply text-[hsl(225,95%,98%)] bg-gradient-to-bl to-steel-grey-800 from-0% from-steel-grey-700 to-60%; */
+    @apply text-zinc-200 bg-gradient-to-bl to-[#111111] from-0% from-zinc-950 to-80%;
+    scrollbar-width: thin;
   }
   body {
-    @apply tracking-tighter;
     font-family: var(--font-space-grotesk);
   }
 
@@ -88,15 +99,15 @@
   }
 
   h1 {
-    @apply text-4xl tracking-tighter;
+    @apply text-4xl tracking-tight;
   }
 
   h2 {
-    @apply text-3xl tracking-tighter;
+    @apply text-3xl tracking-tight;
   }
 
   h3 {
-    @apply text-2xl tracking-tighter;
+    @apply text-2xl tracking-tight;
   }
 
   h4 {
@@ -105,6 +116,8 @@
 
   p {
     @apply text-base;
+    @apply tracking-normal;
+    @apply text-gray-100;
   }
 
   ul {
@@ -121,7 +134,7 @@
   }
 
   .underline-animation::after {
-    @apply content-[''] absolute left-1/2 bottom-0 w-0 h-[2px] bg-cyber-green-300 transition-all duration-300 ease-in-out;
+    @apply content-[''] absolute left-1/2 bottom-0 w-0 h-[2px] bg-ember-500 transition-all duration-300 ease-in-out;
   }
 
   .underline-animation:hover::after {

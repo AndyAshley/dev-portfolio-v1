@@ -17,7 +17,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
         <textarea
           ref={ref}
           name={name}
-          className="border border-gray-700 hover:border-cyber-green-800 focus-visible:border-cyber-green-400 outline-none transition-all duration-500 rounded shadow p-2 h-24 text-sm"
+          className="border border-zinc-700/80 hover:border-ember-800 focus-visible:border-ember-500 outline-none transition-all duration-500 rounded shadow p-2 h-24 text-sm"
           rows={3}
         />
       </div>
