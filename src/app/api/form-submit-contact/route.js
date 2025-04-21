@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
 
-export async function POST(request) {
+export async function POST() {
   try {
     return NextResponse.json({ result: "success" }, { status: 200 });
   } catch (error) {
