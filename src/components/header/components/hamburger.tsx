@@ -13,8 +13,8 @@ type HamburgerPropsType = {
 const Hamburger = ({ isOpen, onClick }: HamburgerPropsType) => {
   const sharedClasses = `h-[2px] ${
     isOpen
-      ? "bg-ember-500 group-hover:bg-ember-400"
-      : "bg-white group-hover:bg-ember-500"
+      ? "bg-primary group-hover:bg-primary-hover"
+      : "bg-white group-hover:bg-primary"
   } transition-all duration-200 ease-linear`;
 
   return (

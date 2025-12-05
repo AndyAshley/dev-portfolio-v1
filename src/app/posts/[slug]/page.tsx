@@ -133,7 +133,7 @@ export default async function BlogPostPage({
           <div className="flex flex-wrap items-center gap-3 text-sm mb-3">
             <Chip
               background="bg-transparent"
-              color="text-ember-400"
+              color="text-primary"
               className="border-2 border-zinc-700/80"
               text={metadata.category}
             />
@@ -141,7 +141,7 @@ export default async function BlogPostPage({
               {parseDateTime(metadata.date)}
             </time>
             <span className="text-zinc-500">•</span>
-            <span className="font-semibold text-ember-500">
+            <span className="font-semibold text-primary">
               {metadata.author}
             </span>
           </div>

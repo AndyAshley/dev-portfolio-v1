@@ -11,7 +11,7 @@ const SkillSection = () => {
   return (
     <FadeInContent from="bottom">
       <div className="flex flex-row items-center justify-center">
-        <Computer className="mr-2 text-ember-500" />
+        <Computer className="mr-2 text-primary" />
         <h2 className="font-bold">My Skills</h2>
       </div>
 
@@ -30,7 +30,7 @@ const SkillSection = () => {
             <ul className="gap-2 list-none m-0">
               {items.map((skill, index) => (
                 <li key={index} className="flex items-center">
-                  <ChevronRight size={18} className="text-ember-400" />
+                  <ChevronRight size={18} className="text-primary" />
                   {skill}
                 </li>
               ))}

@@ -37,11 +37,11 @@ type SkillGroup = {
 
 export const WORK_EXPERIENCE: WorkExperience[]  = [
   {
-    title: "Senior Front-End Engineer",
-    company: "LeadVenture™",
+    title: "Application Software Developer III",
+    company: "LeadVenture®",
     period: "2024 - Present",
     description:
-      "Lead front-end development for the corporate marketing team, building and maintaining brand websites, internal tools, and prototypes to enhance workflow and brand consistency.",
+      "Lead development for the corporate marketing team, building and maintaining brand websites, internal tools, and prototypes to enhance workflow and brand consistency.",
     technologies: [
       "React",
       "Next.js",
@@ -56,7 +56,7 @@ export const WORK_EXPERIENCE: WorkExperience[]  = [
   {
     title: "Software Engineer",
     company: "Frazer Computing, LLC",
-    parentCompany: "LeadVenture™",
+    parentCompany: "LeadVenture®",
     period: "2022 - 2024",
     description:
       "Built internal tools, maintained the in-house CRM, and worked on REST APIs, proxy servers, and database solutions. Led a full Next.js website redesign and built the Frazer Dealer Portal to streamline account management.",
@@ -74,11 +74,11 @@ export const WORK_EXPERIENCE: WorkExperience[]  = [
   {
     title: "Frontend Engineer",
     company: "Frazer Computing, LLC",
-    parentCompany: "LeadVenture™",
+    parentCompany: "LeadVenture®",
     period: "2019 - 2022",
     description:
       "Developed and optimized responsive web applications, implemented design systems for consistency, and enhanced performance through efficient asset management.",
-    technologies: ["React", "Next.js", "PHP"],
+    technologies: ["React", "Next.js", "PHP", "HTML", "CSS"],
   },
 ];
 

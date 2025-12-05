@@ -114,7 +114,7 @@ export const ContactForm = () => {
       className="relative w-full flex flex-col rounded shadow-lg border border-zinc-700/80 bg-steel-grey-800/75 px-4 pb-4 space-y-4"
       onSubmit={submitHandler}
     >
-      <div className="md:w-1/2 w-3/4 rounded-b-2xl bg-ember-800 h-2 mx-auto mb-10"></div>
+      <div className="md:w-1/2 w-3/4 rounded-b-2xl bg-primary h-2 mx-auto mb-10"></div>
       <TextInput label="Full Name" name="input_1" honeypot ref={honeyRef} />
       <div className="flex flex-col md:flex-row gap-4 w-full">
         <TextInput label="First Name" name="input_2" required ref={fNameRef} />

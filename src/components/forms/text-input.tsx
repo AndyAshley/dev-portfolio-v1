@@ -28,13 +28,13 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
       <div className={classNames} aria-hidden={honeypot}>
         <label htmlFor={name} className="font-bold mb-1">
           {label}
-          {required && <span className="text-ember-500 ml-1">*</span>}
+          {required && <span className="text-primary ml-1">*</span>}
         </label>
         <input
           ref={ref}
           type={type}
           name={name}
-          className="border border-zinc-700/80 hover:border-ember-800 focus-visible:border-ember-500 outline-none transition-all duration-500 rounded shadow px-2 h-8 text-sm"
+          className="border border-zinc-700/80 hover:border-primary-hover focus-visible:border-primary outline-none transition-all duration-500 rounded shadow px-2 h-8 text-sm"
           required={required}
           tabIndex={honeypot ? -1 : 0}
         />

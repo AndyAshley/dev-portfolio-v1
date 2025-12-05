@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Hamburger from "./components/hamburger";
 import { usePathname } from "next/navigation";
-import Logo from "../../assets/aa_web_logo_nav.png";
+import Logo from "../../assets/aa_web_logo_nav_v2.png";
 
 /**
  * Header component for the website
@@ -45,7 +45,6 @@ export function Header() {
     "/",
     "/about",
     "/experience",
-    "/services",
     "/posts",
     "/portfolio",
     "/contact",
@@ -125,7 +124,7 @@ export function Header() {
                     href={pathItem}
                     className={`pb-1 px-4 py-2 block ${
                       pathItem === path
-                        ? "font-bold underline decoration-ember-500 underline-offset-6"
+                        ? "font-bold underline decoration-primary underline-offset-6"
                         : ""
                     }`}
                     onClick={toggleNav}

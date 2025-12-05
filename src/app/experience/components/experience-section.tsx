@@ -28,7 +28,7 @@ const ExperienceSection = () => {
       <div className="grid md:grid-cols-3 gap-12">
         <FadeInContent from="left" className="md:col-span-2">
           <div className="flex items-center md:justify-start justify-center mb-8">
-            <BriefcaseBusiness className="mr-3 text-ember-500" />
+            <BriefcaseBusiness className="mr-3 text-primary" />
             <h3 className="text-2xl font-bold">Work Experience</h3>
           </div>
 
@@ -51,7 +51,7 @@ const ExperienceSection = () => {
                     </div>
                     <Chip
                       background="bg-transparent"
-                      color="text-ember-400"
+                      color="text-primary"
                       className="border-2 border-zinc-700/80"
                       text={job.period}
                     />
@@ -62,7 +62,7 @@ const ExperienceSection = () => {
                       <Chip
                         key={techIndex}
                         background="bg-transparent"
-                        color="text-ember-400"
+                        color="text-primary"
                         className="border-2 border-zinc-700/80"
                         text={tech}
                       />
@@ -76,7 +76,7 @@ const ExperienceSection = () => {
 
         <FadeInContent from="bottom">
           <div className="flex items-center md:justify-start justify-center mb-8">
-            <GraduationCap className="mr-3 text-ember-500" />
+            <GraduationCap className="mr-3 text-primary" />
             <h3 className="text-2xl font-bold">Education</h3>
           </div>
 
@@ -97,7 +97,7 @@ const ExperienceSection = () => {
                     <p className="text-lg">{edu.institution} </p>
                     <Chip
                       background="bg-transparent"
-                      color="text-ember-400"
+                      color="text-primary"
                       className="border-2 border-zinc-700/80"
                       text={edu.period}
                     />
@@ -109,7 +109,7 @@ const ExperienceSection = () => {
           </div>
 
           <div className="flex items-center md:justify-start justify-center my-8">
-            <BadgeCheck className="mr-3 text-ember-500" />
+            <BadgeCheck className="mr-3 text-primary" />
             <h3 className="text-2xl font-bold">Certificates</h3>
           </div>
           <div className="space-y-6 flex flex-wrap gap-6 justify-evenly">

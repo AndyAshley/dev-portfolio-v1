@@ -11,7 +11,7 @@ import { LinkButton } from "@/components/ui/link-button";
 import { MoveRight, ChevronsRight } from "lucide-react";
 
 // Images
-import AndyHeadshot from "@assets/andy_2025.png";
+import AndyHeadshot from "@assets/andy_2025_v2.jpg";
 
 const HeroSection = () => {
   const [typedText, setTypedText] = useState("");
@@ -34,11 +34,11 @@ const HeroSection = () => {
         from="left"
         className="relative flex justify-center md:justify-start"
       >
-        <div className="relative w-[50vw] max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] aspect-square rounded-full overflow-hidden ring-2 ring-ember-800 border-2 border-zinc-800 shadow-lg">
+        <div className="relative w-[50vw] max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] aspect-square rounded-full overflow-hidden ring-2 ring-primary/40 border-2 border-zinc-800 shadow-lg">
           <Image
             src={AndyHeadshot}
             alt="Andy Ashley"
-            className="w-full h-full object-cover grayscale-25"
+            className="w-full h-full object-cover grayscale-75"
             height={600}
             width={600}
             priority
@@ -51,16 +51,14 @@ const HeroSection = () => {
         className="flex flex-col space-y-6 text-center md:text-left justify-center"
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-0">
-          Andy A<span className="text-ember-500 ml-1">.</span>
+          Andy A<span className="text-primary ml-1">.</span>
         </h1>
 
-        <h2 className="text-xl sm:text-2xl md:text-4xl font-medium font-secondary h-8">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-medium font-secondary h-8">
           {typedText}
         </h2>
 
-        <p className="text-lg font-bold">
-          I build fast, scalable, and maintainable applications.
-        </p>
+        <p className="text-3xl font-bold">I Turn Ideas Into Software.</p>
 
         <p className="leading-relaxed text-balance max-w-2xl text-gray-300">
           Full-stack apps, internal tools, or something completely new—I make

@@ -4,6 +4,10 @@ import { Metadata } from "next";
 import FadeInContent from "@/lib/motion";
 import Divider from "@/components/ui/divider";
 import ContentContainer from "@/components/ui/content-container";
+import Image from "next/image";
+
+// Assets
+import Banner from "@assets/old_pc_banner.jpeg";
 
 // Metadata
 export const metadata: Metadata = {
@@ -17,14 +21,12 @@ export default function About() {
     <section className="flex flex-col gap-15 w-full h-full items-center justify-center">
       <FadeInContent from="left">
         <div className="max-w-200 flex flex-col md:flex-row mx-auto items-center text-center">
-          <h1 className="md:text-right font-bold mb-3">
-            About Me
-          </h1>
-          <p className="text-lg col-span-2 md:text-left md:border-l-2 border-ember-500 md:pl-5 md:ml-5 md:text-wrap text-balance tracking-normal text-zinc-200">
-            <strong>I'm a lifelong coder</strong> with over 5 years of
-            professional experience building modern web applications. I
-            specialize in full-stack engineering with a focus on creating
-            scalable, maintainable, and user-friendly applications.
+          <h1 className="md:text-right font-bold mb-3">About Me</h1>
+          <p className="text-lg col-span-2 md:text-left md:border-l-2 border-primary md:pl-5 md:ml-5 md:text-wrap text-balance tracking-normal text-zinc-200">
+            <strong>I'm a lifelong coder</strong> and software engineer skilled
+            in modern front-end frameworks, backend systems, and internal
+            tooling, with a proven track record of independently owning projects
+            from concept to deployment.
           </p>
         </div>
       </FadeInContent>
@@ -33,6 +35,12 @@ export default function About() {
           <h2 className="font-bold mb-4 text-center">My Journey</h2>
           <Divider />
           <div className="space-y-4 text-left text-zinc-300">
+            <Image
+              src={Banner}
+              width={869}
+              className="rounded opacity-50 my-3"
+              alt="Photo of a retro pc"
+            />
             <p className="text-md text-zinc-300 tracking-normal">
               <strong>Curiosity has always driven me</strong>. Knowing that
               something works has never been enough, I need to understand

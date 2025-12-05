@@ -15,8 +15,8 @@ const ButtonTabs = ({ tabs, activeTab, handleClick }: ButtonTabsProps) => {
               key={tab}
               className={`px-4 py-2 rounded-sm text-sm font-bold transition-colors cursor-pointer ${
                 activeTab === tab
-                  ? "bg-ember-400 text-zinc-800"
-                  : " text-zinc-200 hover:text-ember-500"
+                  ? "bg-primary hover:bg-primary-hover text-zinc-800"
+                  : " text-zinc-200 hover:text-primary"
               }`}
             >
               {tab}

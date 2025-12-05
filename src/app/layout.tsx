@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
+import Head from "next/head";
 import { Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -7,6 +9,7 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import ParticleBackground from "@/components/particle/particle-background";
+import { getNonce } from "@/lib/nonce";
 
 // Toast
 import { ToastProvider } from "@/context/toast-context";
@@ -48,17 +51,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const nonce = await getNonce();
+
   return (
     <html lang="en">
-      <ToastProvider>
-        <body
-          className={`${spaceGroteskFont.variable} ${nordFont.variable} grid grid-rows-[auto_1fr_auto] min-h-screen w-full body-background`}
-        >
+      <head>
+        {nonce && <meta name="csp-nonce" content={nonce} />}
+      </head>
+      <body
+        className={`${spaceGroteskFont.variable} ${nordFont.variable} grid grid-rows-[auto_1fr_auto] min-h-screen w-full body-background`}
+      >
+        <ToastProvider>
           <Header />
           <main className="w-full h-full mx-auto px-4 py-20 my-auto">
             {children}
@@ -66,8 +74,8 @@ export default function RootLayout({
             <ToastContainer />
           </main>
           <Footer />
-        </body>
-      </ToastProvider>
+        </ToastProvider>
+      </body>
     </html>
   );
 }

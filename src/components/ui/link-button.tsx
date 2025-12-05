@@ -5,6 +5,7 @@ type LinkButtonProps = {
   href: string;
   label?: string;
   mode?: "primary" | "secondary";
+  size?: "small" | "large";
   className?: string;
 };
 
@@ -21,15 +22,19 @@ export const LinkButton = ({
   href,
   label,
   mode = "primary",
+  size = "large",
   className,
 }: LinkButtonProps) => {
   const buttonMode =
     mode === "primary"
-      ? "bg-ember-400 text-zinc-800 hover:lg:bg-ember-500 border-ember-600"
-      : "bg-transparent text-ember-500 border-ember-500  hover:lg:bg-ember-400 hover:lg:text-zinc-800";
+      ? "bg-primary text-zinc-800 hover:lg:bg-primary-hover border-primary hover:lg:border-primary-hover"
+      : "bg-transparent text-primary border-primary  hover:lg:bg-primary hover:lg:text-zinc-800";
+
+  const sizing = size === "large" ? "px-4 py-2" : "text-sm px-2 py-1";
 
   const classNames = [
-    "flex items-center w-fit cursor-pointer px-4 py-2 font-bold rounded-md border-2  transition-all duration-500 ease-in-out hover:lg:-translate-y-1",
+    "flex items-center w-fit cursor-pointer font-bold rounded-md border-2 transition-all duration-500 ease-in-out hover:lg:-translate-y-1",
+    sizing,
     buttonMode,
     className,
   ]
