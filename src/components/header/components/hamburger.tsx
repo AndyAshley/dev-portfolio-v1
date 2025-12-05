@@ -11,8 +11,11 @@ type HamburgerPropsType = {
  * @returns  {JSX.Element} - The hamburger button
  */
 const Hamburger = ({ isOpen, onClick }: HamburgerPropsType) => {
-  const sharedClasses =
-    "h-[2px] bg-white group-hover:bg-cyber-green-200 transition-all duration-200 ease-linear";
+  const sharedClasses = `h-[2px] ${
+    isOpen
+      ? "bg-ember-500 group-hover:bg-ember-400"
+      : "bg-white group-hover:bg-ember-500"
+  } transition-all duration-200 ease-linear`;
 
   return (
     <button

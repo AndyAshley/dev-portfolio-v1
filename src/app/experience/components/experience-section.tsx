@@ -28,7 +28,7 @@ const ExperienceSection = () => {
       <div className="grid md:grid-cols-3 gap-12">
         <FadeInContent from="left" className="md:col-span-2">
           <div className="flex items-center md:justify-start justify-center mb-8">
-            <BriefcaseBusiness className="mr-3 text-cyber-green-400" />
+            <BriefcaseBusiness className="mr-3 text-ember-500" />
             <h3 className="text-2xl font-bold">Work Experience</h3>
           </div>
 
@@ -50,8 +50,9 @@ const ExperienceSection = () => {
                       </p>
                     </div>
                     <Chip
-                      background="bg-cyber-green-200"
-                      color="text-shadow-green-800"
+                      background="bg-transparent"
+                      color="text-ember-400"
+                      className="border-2 border-zinc-700/80"
                       text={job.period}
                     />
                   </div>
@@ -60,8 +61,9 @@ const ExperienceSection = () => {
                     {job.technologies.map((tech, techIndex) => (
                       <Chip
                         key={techIndex}
-                        background="bg-cyber-green-200"
-                        color="text-shadow-green-800"
+                        background="bg-transparent"
+                        color="text-ember-400"
+                        className="border-2 border-zinc-700/80"
                         text={tech}
                       />
                     ))}
@@ -74,7 +76,7 @@ const ExperienceSection = () => {
 
         <FadeInContent from="bottom">
           <div className="flex items-center md:justify-start justify-center mb-8">
-            <GraduationCap className="mr-3 text-cyber-green-400" />
+            <GraduationCap className="mr-3 text-ember-500" />
             <h3 className="text-2xl font-bold">Education</h3>
           </div>
 
@@ -94,8 +96,9 @@ const ExperienceSection = () => {
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-5">
                     <p className="text-lg">{edu.institution} </p>
                     <Chip
-                      background="bg-cyber-green-200"
-                      color="text-shadow-green-800"
+                      background="bg-transparent"
+                      color="text-ember-400"
+                      className="border-2 border-zinc-700/80"
                       text={edu.period}
                     />
                   </div>
@@ -106,7 +109,7 @@ const ExperienceSection = () => {
           </div>
 
           <div className="flex items-center md:justify-start justify-center my-8">
-            <BadgeCheck className="mr-3 text-cyber-green-400" />
+            <BadgeCheck className="mr-3 text-ember-500" />
             <h3 className="text-2xl font-bold">Certificates</h3>
           </div>
           <div className="space-y-6 flex flex-wrap gap-6 justify-evenly">

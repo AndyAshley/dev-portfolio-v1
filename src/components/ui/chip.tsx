@@ -12,7 +12,7 @@ const Chip = ({
   className = "",
 }: ChipProps) => {
   const classNames = [
-    `text-xs font-medium rounded-full px-2 py-1 w-fit mt-2 md:mt-0`,
+    `text-xs font-medium rounded-full px-2 py-1 w-fit mt-2 md:mt-0 tracking-wide`,
     color,
     background,
     className,

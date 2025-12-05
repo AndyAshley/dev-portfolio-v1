@@ -17,15 +17,13 @@ export const Button = ({
 }: ButtonProps) => {
   const buttonMode =
     mode === "primary"
-      ? "bg-cyber-green-400 text-shadow-green-800 hover:lg:bg-cyber-green-200"
-      : "bg-transparent text-cyber-green-200 hover:lg:bg-cyber-green-200 hover:lg:text-shadow-green-800";
-
-  const alignSelf = `self-${align}`;
+      ? "bg-ember-400 text-zinc-800 hover:lg:bg-ember-500 border-ember-600"
+      : "bg-transparent text-ember-500 border-ember-500  hover:lg:bg-ember-400 hover:lg:text-zinc-800";
 
   const classNames = [
-    "flex items-center w-fit cursor-pointer px-4 py-2 font-bold rounded-md border-2 border-gray-700 transition-all duration-500 ease-in-out hover:lg:-translate-y-1",
+    "flex items-center w-fit cursor-pointer px-4 py-2 font-bold rounded-md border-2  transition-all duration-500 ease-in-out hover:lg:-translate-y-1",
     buttonMode,
-    alignSelf,
+    (align && "align-items-" + align) || "",
     className,
   ]
     .filter(Boolean)
