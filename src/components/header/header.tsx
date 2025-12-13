@@ -45,7 +45,6 @@ export function Header() {
     "/",
     "/about",
     "/experience",
-    "/services",
     "/posts",
     "/portfolio",
     "/contact",
