@@ -11,7 +11,7 @@ import { LinkButton } from "@/components/ui/link-button";
 import { MoveRight, ChevronsRight } from "lucide-react";
 
 // Images
-import AndyHeadshot from "@assets/andy_2025.png";
+import AndyHeadshot from "@assets/andy_2025_v3.png";
 
 const HeroSection = () => {
   const [typedText, setTypedText] = useState("");
@@ -38,9 +38,9 @@ const HeroSection = () => {
           <Image
             src={AndyHeadshot}
             alt="Andy Ashley"
-            className="w-full h-full object-cover grayscale-25"
-            height={600}
-            width={600}
+            className="w-full h-full object-cover"
+            height={500}
+            width={500}
             priority
           />
         </div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Hamburger from "./components/hamburger";
 import { usePathname } from "next/navigation";
-import Logo from "../../assets/aa_web_logo_nav.png";
+import Logo from "../../assets/aa_web_logo_nav_v2.png";
 
 /**
  * Header component for the website
@@ -45,7 +45,6 @@ export function Header() {
     "/",
     "/about",
     "/experience",
-    "/services",
     "/posts",
     "/portfolio",
     "/contact",
