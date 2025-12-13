@@ -11,7 +11,7 @@ import { LinkButton } from "@/components/ui/link-button";
 import { MoveRight, ChevronsRight } from "lucide-react";
 
 // Images
-import AndyHeadshot from "@assets/andy_2025_v2.jpg";
+import AndyHeadshot from "@assets/andy_2025_v3.png";
 
 const HeroSection = () => {
   const [typedText, setTypedText] = useState("");
